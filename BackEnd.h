@@ -160,9 +160,11 @@ public:
             // Return the first empty Box that is not filled
             for (int i = 0; i < 9; i++)
             {
-                if (Boxes[i].Filled == false)
+                int index = rand() % (8 + 1 - 0) + 0;
+                
+                if (Boxes[index].Filled == false)
                 {
-                    return i;
+                    return index;
                 }
             }
         }
